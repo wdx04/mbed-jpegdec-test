@@ -1,0 +1,4 @@
+[submodule "mbed-os"]
+	path = mbed-os
+	url = https://github.com/wdx04/mbed-os
+	branch = add-renesas-ra

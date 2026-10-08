@@ -1,0 +1,23 @@
+buildType:
+  default: Develop
+  choices:
+    Develop:
+      short: Develop
+      long: Emit debug information but also optimize
+      buildType: Develop
+    Debug:
+      short: Debug
+      long: Emit debug information and don't optimize
+      buildType: Debug
+    Release:
+      short: Release
+      long: Optimize generated code
+      buildType: Release
+board:
+  default: RA8P1_TITAN_MINI
+  choices:
+    RA8P1_TITAN_MINI:
+      short: RA8P1_TITAN_MINI
+      settings:
+        MBED_TARGET: RA8P1_TITAN_MINI
+        UPLOAD_METHOD: PYOCD

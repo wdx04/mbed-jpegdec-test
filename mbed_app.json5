@@ -1,0 +1,11 @@
+{
+    "macros": ["USE_DMA2D=1"],
+    "target_overrides": {
+        "*": {
+            "target.application-profile": "bare-metal",
+            "target.console-uart": true,
+            "events.shared-dispatch-from-application": true,
+            "fat_chan.ff_fs_exfat" : true
+        }
+    }
+}
